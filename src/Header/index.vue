@@ -1,6 +1,6 @@
 <template>
 
- <div>Header</div>
+ <div class="yc-header">Header</div>
 
 </template>
 
@@ -10,6 +10,9 @@ import { ref,reactive } from 'vue' ;
 
 </script>
 
-<style scoped>
-
+<style scoped lang="scss">
+    @include b(header) {
+        height:60px;
+        border-bottom:1px solid #ccc;
+    }
 </style>

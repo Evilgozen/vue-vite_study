@@ -1,12 +1,13 @@
 <template>
 
- <div class="app"></div>
+ <Layout></Layout>
 
 </template>
 
 <script setup lang='ts'>
 
 import { ref,reactive } from 'vue' ;
+import Layout from './Layout/index.vue';
 
 </script>
 

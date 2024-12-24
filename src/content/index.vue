@@ -1,6 +1,8 @@
 <template>
 
- <div>content</div>
+ <div class="yc-content">content
+    <div class="yc-content__items" v-for="item in 100">{{ item }}</div>
+ </div>
 
 </template>
 
@@ -10,6 +12,15 @@ import { ref,reactive } from 'vue' ;
 
 </script>
 
-<style scoped>
-
+<style scoped lang="scss">
+@include b(content) {
+    flex:1;
+    overflow: auto;
+    @include e(items) {
+        padding:10px;
+        margin:10px;
+        border:1px solid #ccc;
+        border-radius: 4px;
+    }
+}
 </style>
